@@ -1,4 +1,4 @@
-{% set version = '2.1' %}
+{% set version = "2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jsonld_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jsonld/jsonld_{{ version }}.tar.gz
-  sha256: 9c9bcf63aad870dc2ec1eb13ca0b4c53559f845add602b546c61cc65d3a5e052
+  sha256: c8f2d5c3ed1a681115b6ea87bca6e1f11053e0f45fc981c6f589f293b4f8f42e
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -42,13 +42,11 @@ test:
 about:
   home: https://github.com/ropensci/jsonld#readme (devel) https://www.w3.org/TR/json-ld (spec)
   license: BSD_3_clause
-  summary: JSON-LD is a light-weight syntax for expressing linked data. It is primarily intended
-    for web-based programming environments, interoperable web services and for  storing
-    linked data in JSON-based databases. This package provides bindings to the  JavaScript
-    library for converting, expanding and compacting JSON-LD documents.
+  summary: JSON-LD is a light-weight syntax for expressing linked data. It is primarily intended for web-based programming environments, interoperable web services and for  storing linked data in JSON-based databases. This package provides bindings to the  JavaScript library for converting, expanding and compacting JSON-LD
+    documents.
   license_family: BSD
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_3_clause'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_3_clause
     - LICENSE
 
 extra:
