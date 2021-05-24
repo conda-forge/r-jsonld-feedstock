@@ -3,13 +3,11 @@ About r-jsonld
 
 Home: https://github.com/ropensci/jsonld#readme (devel) https://www.w3.org/TR/json-ld (spec)
 
-Package license: BSD_3_clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jsonld-feedstock/blob/master/LICENSE.txt)
 
 Summary: JSON-LD is a light-weight syntax for expressing linked data. It is primarily intended for web-based programming environments, interoperable web services and for  storing linked data in JSON-based databases. This package provides bindings to the  JavaScript library for converting, expanding and compacting JSON-LD documents.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-jsonld` from the `conda-forge` channel can be achieved by adding `
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-jsonld` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
