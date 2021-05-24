@@ -3,7 +3,7 @@ About r-jsonld
 
 Home: https://github.com/ropensci/jsonld#readme (devel) https://www.w3.org/TR/json-ld (spec)
 
-Package license: BSD_3_clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jsonld-feedstock/blob/master/LICENSE.txt)
 
