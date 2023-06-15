@@ -1,11 +1,11 @@
-About r-jsonld
-==============
+About r-jsonld-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jsonld-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ropensci/jsonld#readme (devel) https://www.w3.org/TR/json-ld (spec)
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jsonld-feedstock/blob/main/LICENSE.txt)
 
 Summary: JSON-LD is a light-weight syntax for expressing linked data. It is primarily intended for web-based programming environments, interoperable web services and for  storing linked data in JSON-based databases. This package provides bindings to the  JavaScript library for converting, expanding and compacting JSON-LD documents.
 
