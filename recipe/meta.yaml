@@ -1,4 +1,4 @@
-{% set version = "2.2" %}
+{% set version = "2.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jsonld_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jsonld/jsonld_{{ version }}.tar.gz
-  sha256: c8f2d5c3ed1a681115b6ea87bca6e1f11053e0f45fc981c6f589f293b4f8f42e
+  sha256: fd3528fab597ee2597bd277ac18b6d2a4cf3b1576084a2a3d15d8bb54e845aca
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
